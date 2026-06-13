@@ -24,7 +24,7 @@ class DataLoader:
 
         # ── Load raw data ────────────────────────────────────────────
         try:
-            self.df: pd.DataFrame = pd.read_csv(csv_path, on_bad_lines="skip")
+            self.df: pd.DataFrame = pd.read_csv(csv_path, on_bad_lines="skip", nrows=2000)
         except Exception as exc:
             logger.error("Failed to load CSV '%s': %s", csv_path, exc)
             self.df = pd.DataFrame()
