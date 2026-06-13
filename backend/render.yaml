@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: amazon-market-gap-detector-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: RAPIDAPI_KEY
+        value: 0e1e616859msh8f29dc14d41a427p114e9ajsn8108d918b2a6
+      - key: RAPIDAPI_HOST
+        value: real-time-amazon-data.p.rapidapi.com

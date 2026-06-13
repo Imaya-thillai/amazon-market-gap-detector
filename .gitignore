@@ -1,0 +1,43 @@
+# Environments
+.env
+.env.*
+.venv
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build Outputs
+frontend/dist/
+frontend/build/
+
+# Mac / OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data files (To avoid pushing large CSVs)
+backend/data/*.csv
+*.csv
+*.db
