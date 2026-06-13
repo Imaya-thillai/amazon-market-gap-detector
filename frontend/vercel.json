@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://amazon-market-gap-detector-api.onrender.com/api/$1"
+      "destination": "https://amazon-market-gap-detector1.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",
