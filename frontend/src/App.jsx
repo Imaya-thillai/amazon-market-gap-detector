@@ -110,7 +110,7 @@ export default function App() {
 
           {/* GitHub */}
           <a
-            href="https://github.com"
+            href="https://github.com/Imaya-thillai/amazon-market-gap-detector"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#9ca3af] hover:text-[#f9fafb] transition-colors"
