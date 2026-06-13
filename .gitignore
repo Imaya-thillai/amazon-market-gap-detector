@@ -37,7 +37,3 @@ Thumbs.db
 *.swp
 *.swo
 
-# Data files (To avoid pushing large CSVs)
-backend/data/*.csv
-*.csv
-*.db
