@@ -51,13 +51,6 @@ class MLEngine:
             from sentence_transformers import SentenceTransformer
 
             self.st_model = SentenceTransformer("all-MiniLM-L6-v2")
-            if self.product_titles:
-                self.product_embeddings = self.st_model.encode(
-                    self.product_titles,
-                    batch_size=64,
-                    show_progress_bar=False,
-                    convert_to_numpy=True,
-                )
             self.use_embeddings = True
             logger.info("MLEngine: sentence-transformers loaded ✓")
         except Exception as exc:
